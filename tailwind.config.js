@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const customUtilitiesPlugin = require("./tailwind.custom");
+
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -16,9 +19,14 @@ module.exports = {
       },
     },
     extend: {
+      height: {
+        "20vh": "20vh",
+        "25vh": "25vh",
+      },
+
       colors: {
         "custom-gray": "#8e8e8e",
-        "custom-red": "ff002c",
+        "custom-red": "#ff002c",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -74,5 +82,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), customUtilitiesPlugin],
 };
