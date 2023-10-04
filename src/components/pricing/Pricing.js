@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
-const HomePage = () => {
-    return react_1.default.createElement("section", null, "HomePage");
+const Pricing = () => {
+    return react_1.default.createElement(react_1.default.Fragment, null, "PricingPage");
 };
-exports.default = HomePage;
+exports.default = Pricing;
