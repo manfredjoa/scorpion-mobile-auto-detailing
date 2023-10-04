@@ -1,7 +1,11 @@
 import React from "react";
 
 const Pricing = () => {
-  return <>PricingPage</>;
+  return (
+    <>
+      <h1>Pricing</h1>
+    </>
+  );
 };
 
 export default Pricing;
