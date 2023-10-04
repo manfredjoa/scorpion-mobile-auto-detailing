@@ -3,9 +3,9 @@ import Pricing from "../../components/pricing/Pricing";
 
 const PricingPage = () => {
   return (
-    <section>
+    <main>
       <Pricing />
-    </section>
+    </main>
   );
 };
 

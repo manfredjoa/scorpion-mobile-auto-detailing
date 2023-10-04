@@ -10,7 +10,7 @@ function App() {
   const isWelcomePage = location.pathname === "/";
 
   return (
-    <main>
+    <>
       {!isWelcomePage && <NavBar />}
       <Routes>
         <Route path="/" element={<WelcomePage />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
-    </main>
+    </>
   );
 }
 
