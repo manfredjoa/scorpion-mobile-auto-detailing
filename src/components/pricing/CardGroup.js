@@ -40,6 +40,6 @@ const cardData = [
     },
 ];
 const CardGroup = () => {
-    return (react_1.default.createElement("section", { className: "flex justify-evenly" }, cardData.map((data, index) => (react_1.default.createElement(Card_1.default, { key: index, type: data.type, price: data.price, services: data.services, addOns: data.addOns })))));
+    return (react_1.default.createElement("section", { className: "flex justify-center gap-20" }, cardData.map((data, index) => (react_1.default.createElement(Card_1.default, { key: index, type: data.type, price: data.price, services: data.services, addOns: data.addOns })))));
 };
 exports.default = CardGroup;

@@ -39,7 +39,7 @@ const cardData = [
 
 const CardGroup = () => {
   return (
-    <section className="flex justify-evenly">
+    <section className="flex justify-center gap-20">
       {cardData.map((data, index) => (
         <Card
           key={index}
